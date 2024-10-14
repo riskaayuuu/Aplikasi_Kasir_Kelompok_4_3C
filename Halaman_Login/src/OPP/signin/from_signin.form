@@ -88,7 +88,6 @@
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Component id="login" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="bt_signin" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
                                           <Component id="TXTPW_SIGNIN" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
                                           <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="TXTEMAIL" alignment="0" min="-2" pref="225" max="-2" attributes="0"/>
@@ -140,9 +139,7 @@
                           <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="login" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="bt_signin" min="-2" pref="48" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -165,14 +162,6 @@
               </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="TXTEMAIL">
-            </Component>
-            <Component class="rojerusan.RSMaterialButtonRectangle" name="bt_signin">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Sign In"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_signinActionPerformed"/>
-              </Events>
             </Component>
             <Container class="javax.swing.JPanel" name="jPanel3">
               <Properties>

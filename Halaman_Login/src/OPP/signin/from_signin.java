@@ -1,8 +1,10 @@
 package OPP.signin;
 
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
  */
 
 
@@ -33,7 +35,6 @@ public class from_signin extends javax.swing.JFrame {
         bt_close = new javax.swing.JLabel();
         TXTPW_SIGNIN = new javax.swing.JTextField();
         TXTEMAIL = new javax.swing.JTextField();
-        bt_signin = new rojerusan.RSMaterialButtonRectangle();
         jPanel3 = new javax.swing.JPanel();
         bg = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -62,13 +63,6 @@ public class from_signin extends javax.swing.JFrame {
         TXTPW_SIGNIN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TXTPW_SIGNINActionPerformed(evt);
-            }
-        });
-
-        bt_signin.setText("Sign In");
-        bt_signin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt_signinActionPerformed(evt);
             }
         });
 
@@ -132,7 +126,6 @@ public class from_signin extends javax.swing.JFrame {
                                         .addComponent(jLabel3)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(login))
-                                    .addComponent(bt_signin, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(TXTPW_SIGNIN, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel6)
                                     .addComponent(TXTEMAIL, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -173,9 +166,7 @@ public class from_signin extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(login))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(bt_signin, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
+                .addGap(80, 80, 80))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -268,7 +259,6 @@ public class from_signin extends javax.swing.JFrame {
     private javax.swing.JTextField TXTUSERNAME_SIGNIN;
     private javax.swing.JLabel bg;
     private javax.swing.JLabel bt_close;
-    private rojerusan.RSMaterialButtonRectangle bt_signin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

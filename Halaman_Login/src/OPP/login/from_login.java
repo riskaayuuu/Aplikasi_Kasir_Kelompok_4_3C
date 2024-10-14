@@ -1,6 +1,7 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+import rojerusan.RSMaterialButtonRectangle;
  */
 package OPP.login;
 
@@ -230,10 +231,8 @@ public class from_login extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new from_login().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new from_login().setVisible(true);
         });
     }
 
